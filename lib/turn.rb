@@ -6,11 +6,11 @@ def turn(board)
   user_input = gets.strip
 # #convert input to index 
   index = input_to_index(user_input)
-# #define the move method
- move(board, index)
 #check to see if the move is valid 
   if valid_move?(board,index) == true
 #show the board
+# #define the move method
+    move(board, index)
    display_board(board)
  else
 # #ask for input again until you get a valid input by running turn again
